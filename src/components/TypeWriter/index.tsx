@@ -3,10 +3,13 @@ import { Typewriter } from 'react-simple-typewriter';
 
 export const Write = () => {
   return (
-    <div className="pt-24 px-7 md:w-[400px]">
+    <div className="pt-24 px-7 md:w-[600px]">
       <span className=" text-transparent bg-clip-text bg-gradient-to-r from-mpLightGray via-mpGrey to-mpDarkGrey font-bold text-3xl md:text-5xl leading-[3rem] md:leading-[4rem]">
         <Typewriter
-          words={['Olá, sejá bem vindo ao meu portfólio.', 'Hello, welcome to my portfolio.']}
+          words={[
+            'Olá, seja bem vindo ao meu portfolio, conheça um pouco mais minhas habilidades.',
+            'Hello, welcome to my portfolio, get to know a little more about my skills.',
+          ]}
           loop
           cursor
           cursorStyle="_"
