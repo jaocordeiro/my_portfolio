@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         mpBlackHeader: '#212121',
         mpBlack: '#161616',
+        mpLightGray: '#DFDFDF',
+        mpGrey: '#a5a5a5',
+        mpDarkGrey: '#696969',
       },
     },
   },
