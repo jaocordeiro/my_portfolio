@@ -1,40 +1,50 @@
-export default {
-  images: [
+function mock() {
+  return [
     {
       altText: 'HTML',
-      srcImg: '',
+      srcImg: 'assets/html5.png',
     },
     {
       altText: 'CSS',
-      srcImg: '',
+      srcImg: 'assets/css3.png',
     },
     {
       altText: 'Tailwind',
-      srcImg: '',
+      srcImg: 'assets/tailwindcss.png',
     },
     {
       altText: 'JavaScript',
-      srcImg: '',
+      srcImg: 'assets/javascript.png',
     },
     {
       altText: 'TypeScript',
-      srcImg: '',
+      srcImg: 'assets/typescript.png',
     },
     {
       altText: 'ReactJs/React Native',
-      srcImg: '',
+      srcImg: 'assets/react.png',
     },
     {
       altText: 'NextJs',
-      srcImg: '',
+      srcImg: 'assets/nextjs.png',
     },
     {
       altText: 'GraphQL',
-      srcImg: '',
+      srcImg: 'assets/graphql.png',
     },
     {
       altText: 'PostgreSQL',
-      srcImg: '',
+      srcImg: 'assets/postgreesql.png',
     },
-  ],
-};
+    {
+      altText: 'IOS',
+      srcImg: 'assets/ios.png',
+    },
+    {
+      altText: 'Android',
+      srcImg: 'assets/android.png',
+    },
+  ];
+}
+
+export default mock;

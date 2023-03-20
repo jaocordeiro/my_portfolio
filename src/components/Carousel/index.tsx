@@ -1,22 +1,14 @@
 'use client';
-import { Carousel } from 'react-responsive-carousel';
 import mock from './mock';
 
 export const Slider = () => {
   return (
-    <Carousel>
-      <div>
-        <img src="" />
-        <p className="legend"></p>
-      </div>
-      <div>
-        <img src="" />
-        <p className="legend">Le</p>
-      </div>
-      <div>
-        <img src="" />
-        <p className="legend"></p>
-      </div>
-    </Carousel>
+    <div className="flex gap-x-5">
+      {mock().map((image: { srcImg: string; altText: string }) => (
+        <div key={image.altText}>
+          <img className="w-14" src={image.srcImg} alt={image.altText} />
+        </div>
+      ))}
+    </div>
   );
 };
