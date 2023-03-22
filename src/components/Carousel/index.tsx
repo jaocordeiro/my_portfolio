@@ -4,7 +4,7 @@ import mock from './mock';
 export function Carousel() {
   const settings: SliderProps = {
     slidesPerView: 5,
-    autoplay: { delay: 600 },
+    autoplay: { delay: 2500 },
     loop: true,
     breakpoints: {
       320: {
