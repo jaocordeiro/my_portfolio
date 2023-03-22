@@ -1,14 +1,31 @@
-'use client';
+import { Slider, Slide, SliderProps } from '@/components/Slider';
 import mock from './mock';
 
-export const Slider = () => {
+export function Carousel() {
+  const settings: SliderProps = {
+    slidesPerView: 5,
+    autoplay: { delay: 600 },
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1280: {
+        slidesPerView: 5,
+      },
+    },
+  };
+
   return (
-    <div className="flex gap-x-5">
+    <Slider settings={settings}>
       {mock().map((image: { srcImg: string; altText: string }) => (
-        <div key={image.altText}>
-          <img className="w-14" src={image.srcImg} alt={image.altText} />
-        </div>
+        <Slide className="flex justify-center items-center" key={image.altText}>
+          <img className="w-20 h-20 md:w-16 md:h-16" src={image.srcImg} alt={image.altText} />
+        </Slide>
       ))}
-    </div>
+    </Slider>
   );
-};
+}
