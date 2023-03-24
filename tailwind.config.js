@@ -13,7 +13,7 @@ module.exports = {
         mpLightBlack: '#1A1A1A',
         mpBlack: '#161616',
         mpLightGray: '#DFDFDF',
-        mpGrey: '#a5a5a5',
+        mpGrey: '#9e9e9e',
         mpDarkGrey: '#696969',
       },
     },

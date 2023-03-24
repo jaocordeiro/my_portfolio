@@ -22,8 +22,12 @@ export function Carousel() {
   return (
     <Slider settings={settings}>
       {mock().map((image: { srcImg: string; altText: string }) => (
-        <Slide className="flex justify-center items-center" key={image.altText}>
-          <img className="w-20 h-20 md:w-16 md:h-16" src={image.srcImg} alt={image.altText} />
+        <Slide className="flex justify-center items-center cursor-grab" key={image.altText}>
+          <img
+            className="cursor-grabbing w-20 h-20 md:w-16 md:h-16"
+            src={image.srcImg}
+            alt={image.altText}
+          />
         </Slide>
       ))}
     </Slider>

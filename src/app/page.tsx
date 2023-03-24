@@ -2,6 +2,7 @@
 import { Header } from '@/components/Header';
 import { Write } from '@/components/TypeWriter';
 import { Carousel } from '@/components/Carousel';
+import { Accordion } from '@/components/Accordion';
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         </section>
       </div>
       <Carousel />
+
+      <Accordion />
     </div>
   );
 }
