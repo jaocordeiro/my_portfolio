@@ -23,14 +23,17 @@ export function Accordion() {
       });
   }, []);
 
-  console.log('repos', repos);
-
   return (
-    <section className="w-full h-[500px] bg-mpBlack pt-7">
-      <div className="container mx-auto grid sm:grid-cols-1 sm:text-center md:grid-cols-3 gap-y-2.5 gap-x-2.5 px-0">
+    <section className="w-full h-full bg-mpBlack pt-16 pb-7">
+      <p className="text-mpGrey text-center mb-14 text-2xl font-bold">Repositório</p>
+      <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-2.5 gap-x-2.5 px-0">
         {repos.map((item) => {
           return (
-            <div key={item.id} className="">
+            <div
+              key={item.id}
+              className="flex md:flex justify-center items-center w-4/5 h-24 bg-mpLightBlack border-solid border-2 border-mpBlackHeader"
+            >
+              <div className=""></div>
               <Link
                 href={item.html_url}
                 target="_blank"
