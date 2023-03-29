@@ -30,13 +30,13 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
           },
         )}
       </div>
-      <div onClick={() => setOpen(!open)} className="h-7 w-full flex justify-center pt-6">
+      <div onClick={() => setOpen(!open)} className="h-7 w-full flex justify-center py-6">
         <button className="text-white cursor-pointer">
           {open ? <UpArrowIcon className="w-6" /> : <DownArrowIcon className="w-6" />}
         </button>
       </div>
       <Collapse isOpened={open} open={open}>
-        <div className="grid md:grid-cols-3 text-center justify-items-center pt-11 gap-y-4 gap-x-2.5">
+        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-11">
           {outhersRepos.map(
             (item: { id: number; html_url: string; name: string; language: string }) => {
               return (
