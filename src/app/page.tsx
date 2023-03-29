@@ -35,7 +35,13 @@ export default function Home() {
     <div>
       <div className="bg-mpBlack h-screen">
         <Header />
-        <section className="flex justify-center h-screen">
+        <section className="grid justify-center h-screen">
+          <div className="h-52 pt-10 flex justify-center items-center">
+            <img
+              className="w-40 rounded-full grayscale"
+              src="https://avatars.githubusercontent.com/u/56763936?v=4"
+            />
+          </div>
           <Write />
         </section>
       </div>

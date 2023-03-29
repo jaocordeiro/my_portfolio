@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 export const Write = () => {
   return (
-    <div className="pt-24 px-7 md:w-[600px] md:h-[400px]">
+    <div className="px-7 h-64 -mt-32 md:mt-0 md:w-[600px] md:h-[400px]">
       <span className=" text-transparent bg-clip-text bg-gradient-to-r from-mpLightGray via-mpGrey to-mpDarkGrey font-bold text-3xl md:text-5xl leading-[3rem] md:leading-[4rem]">
         <Typewriter
           words={[
