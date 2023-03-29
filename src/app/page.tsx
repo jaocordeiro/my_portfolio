@@ -1,9 +1,10 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { Header } from '@/components/Header';
 import { Write } from '@/components/TypeWriter';
 import { Carousel } from '@/components/Carousel';
 import { Accordion } from '@/components/Accordion';
-import { useEffect, useState } from 'react';
+import Footer from '@/components/Footer';
 
 type SetState = {
   id: string;
@@ -41,6 +42,10 @@ export default function Home() {
       <Carousel />
 
       <Accordion specifyRepos={specifyRepos} outhersRepos={outhersRepos} />
+
+      <footer className="w-full">
+        <Footer text="Feito com ❤️ por João Vitor" />
+      </footer>
     </div>
   );
 }
