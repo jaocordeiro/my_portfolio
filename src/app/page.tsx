@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Write } from '@/components/TypeWriter';
 import { Carousel } from '@/components/Carousel';
 import { Accordion } from '@/components/Accordion';
+import Loading from '@/components/Loading';
 import Footer from '@/components/Footer';
 
 type SetState = {
@@ -33,7 +34,7 @@ export default function Home() {
   const outhersRepos: SetState[] = repos.slice(7);
 
   if (loading) {
-    return <p>Carregando...</p>;
+    return <Loading />;
   }
 
   return (
