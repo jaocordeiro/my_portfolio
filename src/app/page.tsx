@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import { Header } from '@/components/Header';
 import { Write } from '@/components/TypeWriter';
@@ -31,6 +32,10 @@ export default function Home() {
 
   const outhersRepos: SetState[] = repos.slice(7);
 
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
+
   return (
     <div>
       <div className="bg-mpBlack h-screen">
@@ -39,6 +44,7 @@ export default function Home() {
           <div className="h-52 pt-10 flex justify-center items-center">
             <img
               className="w-40 rounded-full grayscale"
+              alt="I'm João Vitor"
               src="https://avatars.githubusercontent.com/u/56763936?v=4"
             />
           </div>

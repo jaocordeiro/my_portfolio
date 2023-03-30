@@ -1,4 +1,5 @@
 'use client';
+
 import { ReactNode } from 'react';
 import { Swiper, SwiperProps } from 'swiper/react';
 import { A11y, Navigation, Pagination, Autoplay } from 'swiper';

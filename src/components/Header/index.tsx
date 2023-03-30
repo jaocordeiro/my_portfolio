@@ -3,7 +3,7 @@ import CodeIcon from '@/components/Svgs/Code';
 import LinkedinIcon from '@/components/Svgs/Linkedin';
 import GitHub from '@/components/Svgs/GitHub';
 
-export const Header = () => {
+export function Header() {
   return (
     <header className="w-full bg-mpBlackHeader">
       <div className="container flex h-20 xl:h-24">
@@ -31,4 +31,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+}

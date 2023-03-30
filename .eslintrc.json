@@ -47,6 +47,7 @@
     "react/require-default-props": "off",
     "react/button-has-type": [ "off", {
       "reset": "off"
-    }]
+    }],
+    "react/jsx-props-no-spreading": "off"
   }
 }
