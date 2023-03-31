@@ -23,8 +23,8 @@ export default function Home() {
     setLoading(true);
     fetch('https://api.github.com/users/jaocordeiro/repos')
       .then((res: { json: () => any }) => res.json())
-      .then((repos) => {
-        setRepos(repos);
+      .then((res) => {
+        setRepos(res);
         setLoading(false);
       });
   }, []);
@@ -52,9 +52,14 @@ export default function Home() {
           <Write />
         </section>
       </div>
-      <Carousel />
 
-      <Accordion specifyRepos={specifyRepos} outhersRepos={outhersRepos} />
+      <section className="bg-mpLightBlack h-36 xl:h-44 flex items-center md:px-8 xl:px-40">
+        <Carousel />
+      </section>
+
+      <section className="w-full h-full bg-mpBlack pt-20 pb-10">
+        <Accordion specifyRepos={specifyRepos} outhersRepos={outhersRepos} />
+      </section>
 
       <footer className="w-full">
         <Footer text="Feito com ❤️ por João Vitor" />
