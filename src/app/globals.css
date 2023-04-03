@@ -6,3 +6,8 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 @import 'swiper/css/autoplay';
+
+
+.ReactCollapse--collapse {
+  transition: height 1000ms;
+}
