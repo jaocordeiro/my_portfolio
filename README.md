@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2><b>✏️ Sobre</b></h2><br/>
 
-## Getting Started
+## Meu Portfólio
 
-First, run the development server:
+</br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+ <h2>🚧 Ainda em construção, ocorrerão melhorias 🚧</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Conectando a API do Github](https://api.github.com/users/jaocordeiro/repos)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<h2><b><br/> 👨🏻‍💻 Bibliotecas utilizadas no projeto</b></h2>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [NextJs](https://beta.nextjs.org/docs)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - **NextJs** é um framework para React, pode ser utilizado para o desenvolvimento de aplicações/sites web com JavaScript.
 
-## Learn More
+- [Tailwindcss](https://tailwindcss.com/)
 
-To learn more about Next.js, take a look at the following resources:
+  - O **Tailwind** CSS é um framework CSS de código aberto que permite criar rapidamente estilos personalizados para seus projetos. O mesmo fornece classes que podem ser combinadas para criar seus próprios estilos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [SwiperJs](https://swiperjs.com/react)
+  - O **SwiperJs** é um framework de React criado e utilizado para apresentações nas formas de slides ou carousel de uma maneira moderna, estilizada e fácil de se implementar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+<h2><b><br/>🖥 Resultado final da aplicação</b></h2><br/>
+<p align="center"><img width="900" height="500" src="public/assets/application.gif"></p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2><b><br/>💻 Requisitos para rodar o projeto</b></h2>
+
+- **Node.js** - version >= `18.9.0`
+- **NPM** - version >= `8.19.1`
+- **Next.js** - version >= `13.0.0`
+
+---
+
+<h2><b><br/>👨🏻‍💻 Como iniciar o Projeto:</b></h2><br/>
+
+Efetuar o clone deste repositório, colando em seu terminal o seguinte comando:
+
+`https://github.com/jaocordeiro/my_portfolio.git`
+
+Após clonar o repositório, acessar a pasta `my-portfolio` rodar o comando **npm run dev** e o site estará rodando em seu
+local.
+
+---
+
+<br/><h2><b><p align="center">Obrigado 😃</p></b><h2>
