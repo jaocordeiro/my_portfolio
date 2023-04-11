@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Collapse } from 'react-collapse';
-import Image from 'next/image';
 
 export function Accordion({ specifyRepos, outhersRepos }: any) {
   const [open, setOpen] = useState<boolean>(false);
@@ -35,21 +34,9 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
       >
         <button className="text-white cursor-pointer">
           {open ? (
-            <Image
-              className="w-6"
-              src="/assets/arrowup.png"
-              alt="Arrow Up"
-              width={24}
-              height={24}
-            />
+            <div className="h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
           ) : (
-            <Image
-              className="w-6"
-              src="/assets/arrowdown.png"
-              alt="Arrow Down"
-              width={24}
-              height={24}
-            />
+            <div className="rotate-180 h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
           )}
         </button>
       </div>
