@@ -27,21 +27,17 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
           ),
         )}
       </div>
-      <div
-        onClick={() => setOpen(!open)}
-        aria-hidden="true"
-        className="h-7 w-full flex justify-center py-8"
-      >
-        <button className="text-white cursor-pointer">
-          {open ? (
-            <div className="h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
+      <div aria-hidden="true" className="pt-4 h-10 w-full flex justify-center">
+        <div onClick={() => setOpen(!open)} className="">
+          {!open ? (
+            <button className="cursor-pointer rotate-180 h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
           ) : (
-            <div className="rotate-180 h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
+            <button className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
           )}
-        </button>
+        </div>
       </div>
       <Collapse isOpened={open} open={open}>
-        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-4">
+        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-12">
           {outhersRepos.map(
             (item: { id: number; html_url: string; name: string; language: string }) => (
               <Link
