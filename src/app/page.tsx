@@ -57,7 +57,7 @@ export default function Home() {
         <Carousel />
       </section>
 
-      <section className="w-full h-full bg-mpBlack pt-20 pb-10">
+      <section className="w-full h-full bg-mpBlack pt-20 pb-6 md:pt-10">
         <Accordion specifyRepos={specifyRepos} outhersRepos={outhersRepos} />
       </section>
 

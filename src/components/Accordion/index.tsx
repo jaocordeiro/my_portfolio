@@ -27,17 +27,25 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
           ),
         )}
       </div>
-      <div aria-hidden="true" className="pt-4 h-10 w-full flex justify-center">
-        <div onClick={() => setOpen(!open)} className="">
+      <div className="pt-4 pb-12 h-10 w-full flex justify-center">
+        <div aria-hidden="true" onClick={() => setOpen(!open)}>
           {!open ? (
-            <button className="cursor-pointer rotate-180 h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
+            <button
+              className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey rotate-180"
+              type="button"
+              aria-label="Arrow Down"
+            />
           ) : (
-            <button className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey" />
+            <button
+              className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey"
+              type="button"
+              aria-label="Arrow Up"
+            />
           )}
         </div>
       </div>
       <Collapse isOpened={open} open={open}>
-        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-12">
+        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-4">
           {outhersRepos.map(
             (item: { id: number; html_url: string; name: string; language: string }) => (
               <Link
