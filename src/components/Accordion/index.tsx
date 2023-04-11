@@ -3,8 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Collapse } from 'react-collapse';
-import UpArrowIcon from '@/components/Svgs/UpArrow';
-import DownArrowIcon from '@/components/Svgs/DownArrow';
+import Image from 'next/image';
 
 export function Accordion({ specifyRepos, outhersRepos }: any) {
   const [open, setOpen] = useState<boolean>(false);
@@ -35,7 +34,23 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
         className="h-7 w-full flex justify-center py-8"
       >
         <button className="text-white cursor-pointer">
-          {open ? <UpArrowIcon className="w-6" /> : <DownArrowIcon className="w-6" />}
+          {open ? (
+            <Image
+              className="w-6"
+              src="/assets/arrowup.png"
+              alt="Arrow Up"
+              width={24}
+              height={24}
+            />
+          ) : (
+            <Image
+              className="w-6"
+              src="/assets/arrowdown.png"
+              alt="Arrow Down"
+              width={24}
+              height={24}
+            />
+          )}
         </button>
       </div>
       <Collapse isOpened={open} open={open}>
