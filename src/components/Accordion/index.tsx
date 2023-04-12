@@ -1,15 +1,19 @@
 'use client';
 
-import Link from 'next/link';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Collapse } from 'react-collapse';
+import ArrowDown from '@/components/Svgs/ArrowDown';
+import ArrowUp from '@/components//Svgs/ArrowUp';
 
 export function Accordion({ specifyRepos, outhersRepos }: any) {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
-      <p className="text-mpGrey text-center mb-20 text-2xl font-bold">Repositório</p>
+      <p className="text-mpGrey text-center mb-16 md:pt-8 xl:pt-16 text-2xl font-bold">
+        Repositório
+      </p>
       <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0">
         {specifyRepos.map(
           (repos: { id: number; html_url: string; name: string; language: string }) => (
@@ -27,25 +31,21 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
           ),
         )}
       </div>
-      <div className="pt-4 pb-12 h-10 w-full flex justify-center">
+      <div className="pt-6 pb-12 h-10 w-full flex justify-center">
         <div aria-hidden="true" onClick={() => setOpen(!open)}>
           {!open ? (
-            <button
-              className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey rotate-180"
-              type="button"
-              aria-label="Arrow Down"
-            />
+            <button type="button" aria-label="Arrow Down">
+              <ArrowDown className="w-8" fill="#9e9e9e" />
+            </button>
           ) : (
-            <button
-              className="cursor-pointer h-0 w-0 border-x-[13px] border-x-transparent border-b-[23px] border-b-mpDarkGrey"
-              type="button"
-              aria-label="Arrow Up"
-            />
+            <button type="button" aria-label="Arrow Up">
+              <ArrowUp className="w-8" fill="#9e9e9e" />
+            </button>
           )}
         </div>
       </div>
       <Collapse isOpened={open} open={open}>
-        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-4">
+        <div className="container mx-auto grid sm:grid-cols-1 text-center justify-items-center md:grid-cols-3 gap-y-4 gap-x-2.5 px-0 pt-2">
           {outhersRepos.map(
             (item: { id: number; html_url: string; name: string; language: string }) => (
               <Link
