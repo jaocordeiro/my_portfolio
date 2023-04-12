@@ -35,11 +35,11 @@ export function Accordion({ specifyRepos, outhersRepos }: any) {
         <div aria-hidden="true" onClick={() => setOpen(!open)}>
           {!open ? (
             <button type="button" aria-label="Arrow Down">
-              <ArrowDown className="w-8" fill="#9e9e9e" />
+              <ArrowDown className="w-8 animate-bounce" fill="#9e9e9e" />
             </button>
           ) : (
             <button type="button" aria-label="Arrow Up">
-              <ArrowUp className="w-8" fill="#9e9e9e" />
+              <ArrowUp className="w-8 animate-bounce" fill="#9e9e9e" />
             </button>
           )}
         </div>
